@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/avatar"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvFavou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar2"
+        android:layout_marginLeft="10dp"
+        android:text="Favourite"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvFav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFavou"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
